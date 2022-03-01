@@ -15,6 +15,9 @@ const loadSearch = () => {
 const displaySearchResutls = (results) => {
     const SearchResultContainer = document.getElementById("search-results");
 
+    // Remove old search result
+    SearchResultContainer.textContent = "";
+
     for (const result of results) {
         // console.log(result);
         const colDiv = document.createElement("div");

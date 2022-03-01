@@ -25,6 +25,17 @@ h6 {
 }
 
 
+/*============
+Result Not found
+=================*/
+
+#result-not-found {
+    display: none;
+    margin: 100px 0;
+    font-size: 28px;
+}
+
+
 /*=========== 
 Details phone button section  
 =====================*/
