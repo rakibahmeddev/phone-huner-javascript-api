@@ -1,8 +1,15 @@
+// // Spinner
+const toggleSpinner = (displayStyle) => {
+    document.getElementById("spinner").style.display = displayStyle;
+};
+
 const loadSearch = () => {
     const searchText = document.getElementById("search-box").value;
-
     // clear search value
     document.getElementById("search-box").value = "";
+
+    // Show spinner Spinner when click on the Search button
+    toggleSpinner("block");
 
     const searchUrl = `https://openapi.programming-hero.com/api/phones?search=${searchText}`;
 
@@ -34,6 +41,7 @@ const displaySearchResutls = (results) => {
         `;
         SearchResultContainer.appendChild(colDiv);
     }
+    toggleSpinner("none");
 };
 
 /*=======================
