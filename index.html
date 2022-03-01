@@ -14,14 +14,14 @@
 
 <body class="bg-light">
     <!-- Header starts  -->
-    <header>
+    <header class="my-5">
         <div class="container">
             <!-- header top texts  -->
             <h1 class="text-center mt-5 mb-3">Handset Reviewer</h1>
             <!-- Input search area  -->
-            <div class="input-group mb-3">
+            <div class="input-group mb-3 w-50 mx-auto">
                 <input id="search-box" type="text" class="form-control" placeholder="Seach phones that you are looking for" aria-label="Seach phones that you are looking for" aria-describedby="button-search" />
-                <button class="btn btn-primary" type="button" id="button-search">
+                <button onclick="loadSearch()" class="btn btn-primary" type="button" id="button-search">
             Search
           </button>
             </div>
@@ -30,12 +30,16 @@
     <!-- Header ends  -->
 
     <!-- section starts -->
-    <main></main>
+    <main class="my-5">
+        <div class="container">
+            <div id="search-results" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"></div>
+        </div>
+    </main>
     <!-- section ends -->
 
     <!-- All Scripts  -->
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/bootstrap.bundle.min.js "></script>
+    <script src="js/scripts.js "></script>
 </body>
 
 </html>
