@@ -24,6 +24,25 @@ h6 {
     font-weight: 600;
 }
 
+
+/*=========== 
+Details phone button section  
+=====================*/
+
 .phone-brand {
     color: #0d6efd;
 }
+
+.features-p {
+    font-weight: 600;
+}
+
+.normal-text {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+/* #phone-detail-container {
+    display: none;
+} */
