@@ -22,6 +22,11 @@ const loadSearch = () => {
 const displaySearchResutls = (results) => {
     const SearchResultContainer = document.getElementById("search-results");
 
+    // if result not found
+    if (results == false) {
+        document.getElementById("result-not-found").style.display = "block";
+    } else {}
+
     // Remove old search result
     SearchResultContainer.textContent = "";
 
@@ -41,6 +46,8 @@ const displaySearchResutls = (results) => {
         `;
         SearchResultContainer.appendChild(colDiv);
     }
+
+    // spnnier will hide because got result
     toggleSpinner("none");
 };
 
